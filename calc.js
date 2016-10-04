@@ -3,22 +3,22 @@ Calculator = function(){
 };
 
 Calculator.prototype.add = function(number){
-	if(typeOf(number) == "number"){
+	if(typeof(number) == "number"){
 		this.value += number;
 	} else {
-		alert("Argument must be a number");
+		alert("Arguments must be a number");
 	}
 };
 
 Calculator.prototype.subtract = function(number){
-	if(typeOf(number) == "number"){
-		this.value -= number;
+	if(typeof(number) == "number"){
+		this.value +-= number;
 	} else {
-		alert("Argument must be a number");
+		alert("Arguments must be a number");
 	}
 };
 /*function addition(firstNumber, secondNumber){
-	if (typeOf(firstNumber) == "number" && typeOf(secondNumber) == "number"){
+	if (typeof(firstNumber) == "number" && typeof(secondNumber) == "number"){
 	var sum = firstNumber + secondNumber;
 	return sum;
 } else {
